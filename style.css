@@ -1,0 +1,419 @@
+	body {
+	margin: 0px; 
+	padding: 0px;
+	}
+
+	/* fon-block1 */
+
+	.intro {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;   
+	background: url("images/livello_1_2.jpg") center no-repeat;
+	height: 120vh;
+	width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+	}
+
+	.container {
+	max-width: 1155px;
+	width: 100%;
+	margin: 0 auto;
+	}
+
+	/* haeder */
+
+	.header {
+	width: 100%;
+	padding-top: 33px;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	}
+
+	.header_inner {
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.nav {
+	display: flex;	
+	padding-top: 15px;
+	}
+
+	.nav_link {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	text-decoration: none; 	
+	font-weight: 400;
+	color: #ffffff;
+	position: relative;
+	margin: 0px 20px;
+	}
+
+	.nav_link:after {
+	content:"";
+	display: none;
+	width: 100%;
+	height: 3px;
+	
+
+	background-color: #fff;
+	opacity: 0;
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	
+	transition: all .3s;
+	}
+
+	.nav_link:hover:after {
+	opacity: 1;
+	display: block;	
+	}
+
+	.nav_cart {
+	background: url("images/fa_shopping_cart_108.png");
+	width: 24px;
+	height: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+	}
+
+	.img_logo {
+	width: 53px;
+	height: 40px;
+	}
+
+	/* BLOCK-1 */
+
+	.intro_title {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 60px;
+	line-height: 1.2;
+	font-weight: 500;
+	color: #ffffff;
+	text-align: center;
+	}
+
+	.intro_text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	 font-weight: 300;
+	color: #ffffff;
+	text-align: center;
+	margin: 0 auto;
+	width: 580px;
+	}
+
+	/* filter */
+
+	.block_filter {
+	width: 100%;
+	height: 143px;
+	background-color: #f5f6f7;
+	}
+
+	.filter_inner {
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.filter_text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333333;
+	padding-left: 20px;
+	}
+
+	.filter_item {
+	display: flex;
+	padding: 0px 40px 0px 0px;
+	}
+
+	.filter {
+	display: flex;
+	padding-top: 60px;
+	}
+
+	.button {
+	width: 204px;
+	height: 52px;
+	background-color: #aa9b77;
+	border-radius: 3px;
+	border: 0px;
+
+	font-family: 'Quicksand';
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 35px;
+	}
+
+	/* Products */
+
+	.block_products {
+	margin-top: 80px;
+	}
+
+	.class_text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333333;
+	}
+
+	.block_class {
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.class_line {
+	width: 1020px;
+	height: 2px;
+	background-color: #cccccc;
+	margin-top: 10px;
+	}
+
+	.number_slider {
+	font-family: 'Quicksand';
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #aa9b77;
+	}
+
+	.buttons {
+	display: inline-block;
+	padding-top: 50px;
+	}
+
+
+
+	.button_slider {
+    font-size: 0;
+    color: transparent;
+	}
+
+	.button_slider:after {
+    content: "";
+    display: block;
+	width: 11px;
+	height: 11px;
+
+    border-top: 2px solid #aa9b77;
+    border-left: 2px solid #aa9b77;
+	}
+
+	.btn_prev {
+    cursor: pointer;
+    transform: rotate(-45deg);
+	}
+
+	.btn_next {
+    cursor: pointer;
+    transform: rotate(135deg);
+	}
+
+	.product_item {
+	width: 320px;
+	height: 378px;
+	background-color: #f5f6f7;
+	padding: 20px;
+	position: relative;
+	transition: all .4s;
+	cursor: pointer;
+	}
+
+	.product_item:hover {
+	border: 6px solid #aa9b77;
+	border-radius: 3px;
+	}
+
+	.products_container {
+	overflow: hidden;
+	}
+
+	.products_content {
+	position: relative;
+	transition: all .3s;
+	width: 1940px;
+	padding-top: 15px;
+	}
+
+	.products_content2 {
+	position: relative;
+	transition: all .3s;
+	width: 1940px;
+	padding-top: 15px;
+	}
+
+	.products_content3 {
+	position: relative;
+	transition: all .3s;
+	width: 1940px;
+	padding-top: 15px;
+	}
+
+	.products_inner {
+	display: flex;	
+	justify-content: space-between;
+	overflow: hidden;
+	}
+
+	.text_product {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #424242;
+	display: flex;
+	cursor: pointer;
+	}
+
+	.text_product:after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	display: block;
+	
+	border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    transform: rotate(224deg);
+    margin: 2px 0px 0px 10px;
+	}
+
+	.image_product {
+	margin-top: 80px;
+	text-align: center;
+	}
+
+	.title_product {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #aa9b77;
+
+	position: absolute;
+	bottom: 20px; 
+	left: 20px; 
+	}
+
+	.price_product  {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 22px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #424242;
+	float: right;
+
+	position: absolute;
+	bottom: 20px; 
+	right:  20px; 
+	}
+
+	.block_items_women {
+	margin-top: 100px;
+	}
+
+	.block_items_children {
+	margin-top: 100px;
+	}
+
+	.hide {
+	display: none;
+	}
+
+	/* footer */
+
+	.block_footer {
+	margin-top: 130px;
+	width: 100%;
+	height: 72px;
+	background-color: #535253;
+	}
+
+	.footer {
+	width: 100%;
+	height: 352px;
+	background-color: #424242;
+	}
+
+	.img_twitter {
+	width: 29px;
+	height: 24px;
+	}
+
+	.footer_content {
+	display: flex;	
+	padding-top: 25px;
+	}
+
+	.title {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #ffffff;
+	margin-left: 20px;
+	}
+
+	.footer_inner {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 100px;
+	}
+
+	.block_text {
+	width: 305px;
+	}
+
+	.footer_title {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	}
+
+	.footer_text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10px;
+	line-height: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 15px;
+	}
+
+	.footer_link  {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0px 20px;
+	}
